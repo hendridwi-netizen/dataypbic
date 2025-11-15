@@ -1,0 +1,37 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "database-ypbic",
+          "appId": "1:572696700406:android:284d8fc504238dda28d3d7",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "database-ypbic",
+          "configurations": {
+            "android": "1:572696700406:android:284d8fc504238dda28d3d7",
+            "web": "1:572696700406:web:d70f5a51f596ec9c28d3d7",
+            "windows": "1:572696700406:web:f9d7f55d93caf37328d3d7"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

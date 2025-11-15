@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572696700406",
+    "project_id": "database-ypbic",
+    "storage_bucket": "database-ypbic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572696700406:android:284d8fc504238dda28d3d7",
+        "android_client_info": {
+          "package_name": "com.example.sip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhOpawbYUucFxx7TZsa0TMW007nDH_hDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
