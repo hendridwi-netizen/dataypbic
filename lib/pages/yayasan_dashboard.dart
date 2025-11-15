@@ -42,9 +42,9 @@ class _YayasanDashboardState extends State<YayasanDashboard> {
         backgroundColor: const Color(0xFF1565C0),
         foregroundColor: Colors.white,
         actions: [
-          IconButton(
+          const IconButton(
             tooltip: 'Ekspor ke Excel',
-            icon: const Icon(Icons.file_download),
+            icon: Icon(Icons.file_download),
             onPressed: exportPegawaiToExcel,
           ),
           IconButton(
@@ -168,7 +168,7 @@ class _YayasanDashboardState extends State<YayasanDashboard> {
 
                 // Pie Chart
                 Text(
-                  '📊 Distribusi Pegawai ${_selectedUnit == null || _selectedUnit == "Semua Unit" ? "per Unit" : "(${_selectedUnit})"}',
+                  '📊 Distribusi Pegawai ${_selectedUnit == null || _selectedUnit == "Semua Unit" ? "per Unit" : "($_selectedUnit)"}',
                   style: const TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold),
                 ),
@@ -208,9 +208,9 @@ class _YayasanDashboardState extends State<YayasanDashboard> {
                       child: BarChart(
                         BarChartData(
                           borderData: FlBorderData(show: false),
-                          gridData: FlGridData(show: true),
+                          gridData: const FlGridData(show: true),
                           titlesData: FlTitlesData(
-                            leftTitles: AxisTitles(
+                            leftTitles: const AxisTitles(
                               sideTitles: SideTitles(showTitles: true),
                             ),
                             bottomTitles: AxisTitles(

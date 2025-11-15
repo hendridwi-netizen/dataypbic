@@ -6,7 +6,7 @@ class PimpinanPenilaianPage extends StatelessWidget {
   final String guruId;
   final String guruName;
 
-  PimpinanPenilaianPage({
+  const PimpinanPenilaianPage({
     super.key,
     required this.guruId,
     required this.guruName,

@@ -44,8 +44,8 @@ class AdminPage extends StatelessWidget {
             Text('Selamat datang, ${user?.email ?? 'Admin'} 👋',
                 style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
             const SizedBox(height: 20),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Expanded(child: StatCard(title: 'Total Pegawai', value: '120', icon: Icons.people)),
                 SizedBox(width: 16),
                 Expanded(child: StatCard(title: 'Pegawai Aktif', value: '115', icon: Icons.verified)),

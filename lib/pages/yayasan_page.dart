@@ -40,8 +40,8 @@ class YayasanPage extends StatelessWidget {
               style: TextStyle(fontSize: 18, color: Colors.black54),
             ),
             const SizedBox(height: 24),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Expanded(child: _StatCard(title: 'Total Pegawai', query: null)),
                 SizedBox(width: 16),
                 Expanded(child: _StatCard(title: 'Pegawai Aktif', query: 'Aktif')),
