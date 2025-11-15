@@ -23,7 +23,7 @@ jobs:
         run: flutter config --enable-web
 
       - name: Build Flutter Web
-        run: flutter build web --web-renderer html --release --base-href="/dataypbic/"
+        run: flutter build web --web-renderer html --release --base-href=/dataypbic/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
