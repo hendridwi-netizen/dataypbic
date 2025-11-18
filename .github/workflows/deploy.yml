@@ -13,19 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Flutter (latest stable)
-        run: |
-          git clone https://github.com/flutter/flutter.git -b stable
-          echo "$PWD/flutter/bin" >> $GITHUB_PATH
-          flutter --version
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: stable
 
-      - name: Enable Flutter Web
+      - name: Enable web
         run: flutter config --enable-web
 
-      - name: Get dependencies
+      - name: Flutter pub get
         run: flutter pub get
 
       - name: Build Flutter Web
